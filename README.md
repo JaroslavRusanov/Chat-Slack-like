@@ -13,11 +13,12 @@ Installation
 
 Develop mode
 
-```make develop```
+```make dev```
 
 Production mode
 
 ```make build```
+```make start```
 
 Technology
 

@@ -7,7 +7,7 @@ export const api = createApi({
     baseUrl: routes.apiPath,
     tagTypes: ['Channels', 'Message'],
     prepareHeaders: ((headers) => {
-      const token = localStorage.getItem('userId');
+      const token = localStorage.getItem('token');
       if (token) {
         headers.set('Authorization', `Bearer ${token}`);
       }

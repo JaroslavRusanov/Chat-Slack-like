@@ -17,6 +17,6 @@ export interface Message {
   id: string
   text: string
   channelId: string
-  userId: string
+  token: string
   timestamp: string
 }

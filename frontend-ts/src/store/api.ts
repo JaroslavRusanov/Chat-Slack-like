@@ -6,17 +6,16 @@ export const api = createApi({
   reducerPath: 'queryApi',
 
   baseQuery: fetchBaseQuery({
-    baseUrl: routes.apiPath,
+    baseUrl: "",
     prepareHeaders: (headers) => {
-      const token = localStorage.getItem('userId')
-      if (token) {
-        headers.set('Authorization', `Bearer ${token}`)
-      }
+      const token = localStorage.getItem('token')
+      if (token) headers.set('Authorization', `Bearer ${token}`);
+      headers.set('Cache-Control', 'no-cache')
       return headers
     },
   }),
 
-  tagTypes: ['Channels', 'Message'] as const,
+  tagTypes: ['Channels', 'Message'],
 
   endpoints: (builder) => ({
     // auth

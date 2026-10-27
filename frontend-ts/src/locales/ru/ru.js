@@ -48,6 +48,7 @@ export default {
     channels: {
       removeButton: 'Удалить',
       renameButton: 'Переименовать',
+      manage: 'Управление каналом',
     },
     messageInput: {
       label: 'Новое сообщение',

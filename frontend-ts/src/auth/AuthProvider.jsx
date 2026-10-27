@@ -5,7 +5,7 @@ import AuthContext from './contexts';
 
 const AuthProvider = ({ children }) => {
   const currentToken = useSelector(tokenSelector);
-  const localStorageToken = localStorage.getItem('userId');
+  const localStorageToken = localStorage.getItem('token');
 
   const initLoggedIn = () => {
     if (localStorageToken && localStorageToken === currentToken) {
@@ -17,7 +17,7 @@ const AuthProvider = ({ children }) => {
   const [loggedIn, setLoggedIn] = useState(initLoggedIn());
   const logIn = () => setLoggedIn(true);
   const logOut = () => {
-    localStorage.removeItem('userId');
+    localStorage.removeItem('token');
     localStorage.removeItem('userName');
     setLoggedIn(false);
   };

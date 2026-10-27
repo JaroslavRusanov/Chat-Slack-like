@@ -5,14 +5,14 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx start-server -s ./frontend/build",
-    "build": "npm run build --prefix frontend",
-    "postinstall": "cd frontend && npm ci"
+    "start": "npx start-server -s ./frontend-ts/dist",
+    "build": "npm run build --prefix frontend-ts",
+    "postinstall": "cd frontend-ts && npm ci"
   },
   "author": "Iaroslav Rusanov sco.nuff@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "@hexlet/chat-server": "^1.1.6"
+    "@hexlet/chat-server": "^2.0.4"
   },
   "devDependencies": {
     "jiti": "^2.6.1"

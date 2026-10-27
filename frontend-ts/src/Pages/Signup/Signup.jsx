@@ -28,7 +28,7 @@ const Signup = () => {
   const onHandleSubmit = async (values) => {
     try {
       const { data } = await addNewUser({ username: values.username, password: values.password });
-      localStorage.setItem('userId', data.token);
+      localStorage.setItem('token', data.token);
       localStorage.setItem('userName', data.username);
       dispatch(setToken(data.token));
       logIn();

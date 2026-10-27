@@ -47,6 +47,7 @@ export default {
     channels: {
       removeButton: 'Remove',
       renameButton: 'Rename',
+      manage: 'Manage channel',
     },
     messageInput: {
       label: 'New message',

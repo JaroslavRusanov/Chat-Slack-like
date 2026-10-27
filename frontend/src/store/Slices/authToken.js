@@ -3,7 +3,7 @@ import { createSlice, createEntityAdapter } from '@reduxjs/toolkit';
 
 const tokenAdapter = createEntityAdapter();
 const initialState = tokenAdapter.getInitialState({
-  token: localStorage.getItem('userId'),
+  token: localStorage.getItem('token'),
 });
 
 const tokenSlice = createSlice({

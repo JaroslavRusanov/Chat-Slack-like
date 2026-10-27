@@ -3,7 +3,7 @@ import type { RootState } from '../index'
 import { TokenState } from '../types'
 
 const initialState: TokenState = {
-  token: localStorage.getItem('userId'),
+  token: localStorage.getItem('token'),
 }
 
 const tokenSlice = createSlice({

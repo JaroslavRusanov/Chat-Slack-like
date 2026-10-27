@@ -26,7 +26,7 @@ const Login = () => {
     onSubmit: async (inputData) => {
       try {
         const { data } = await getToken(inputData);
-        localStorage.setItem('userId', data.token);
+        localStorage.setItem('token', data.token);
         localStorage.setItem('userName', data.username);
         dispatch(setToken(data.token));
         setFailAuth(false);

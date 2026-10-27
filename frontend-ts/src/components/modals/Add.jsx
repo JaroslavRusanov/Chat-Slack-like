@@ -21,7 +21,7 @@ const Add = ({
       body: '',
     },
     onSubmit: async (values) => {
-      const channelsNames = await Object.entries(data).map(([, { name }]) => name);
+      const channelsNames = data ? Object.values(data).map(({ name }) => name) : [];
       try {
         const channelSchema = object({
           body: string()
