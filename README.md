@@ -25,3 +25,5 @@ Technology
 React, React Router Dom, Redux Toolkit Query, React-Bootstrap, React-i18next, Toastify, Leo-profanity
 
 [Example on render.com](https://frontend-project-12-web-mky9.onrender.com/)
+
+AI assisted
